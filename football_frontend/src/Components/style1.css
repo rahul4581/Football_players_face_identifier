@@ -1,0 +1,115 @@
+.container {
+  font-family: Arial, sans-serif;
+  background-image: url("./BG.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height:100vh
+
+}
+.heading{
+    display:flex;
+    flex-direction:row;
+    gap:0px;
+    align-items: center;
+    justify-content: center;
+}
+.heading h1{
+    font-size:70px;
+    color:white;
+    font-family:"papyrus";
+    font-weight: 600;
+}
+.heading h2{
+    font-size:60px;
+    font-family:"papyrus";
+}
+.icon1{
+    font-size:40px;
+    color:rgb(182, 216, 11);
+}
+.upload-container{
+    min-height: 200px;
+    width:80%;
+    margin-left:10%;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    display:flex;
+    flex-direction: column;
+}
+#image-upload{
+    display:none;
+}
+.upload-label{
+    font-size:30px;
+}
+.uploader{
+    width:30%;
+    padding-top:2%;
+    padding-bottom: 2%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(53, 131, 64);
+    margin-top:2%;
+    margin-left:35%;
+    font-family: "Inter", sans-serif;
+    color:white;
+}
+.uploader:hover{
+    cursor: pointer;
+}
+.upload-label-sub{
+    display:flex;
+    flex-direction:row;
+    gap:10px;
+}
+.upload-label-sub:hover{
+    cursor: pointer;
+}
+.about{
+    padding-bottom:5%;
+}
+.para{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    margin-left:5%;
+}
+.para p{
+    color:white;
+    font-family:"inter",sans-serif;
+}
+.icon2{
+    margin-top:15px;
+    font-size:20px;
+    color:red;
+}
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* shaded background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; 
+}
+
+.loader-content {
+  text-align: center;
+  color: white;
+  font-size: 18px;
+}
+
+.rotating-icon {
+  animation: rotateLoader 1s linear infinite;
+  margin-bottom: 12px;
+}
+
+@keyframes rotateLoader {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

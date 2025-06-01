@@ -1,0 +1,43 @@
+.player-card {
+  display: flex;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  margin: 20px auto;
+  max-width: 900px;
+  transition: transform 0.3s ease;
+}
+
+.player-card:hover {
+  transform: scale(1.02);
+}
+
+.player-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-right: 2px solid #eee;
+}
+
+.player-details {
+  padding: 20px;
+  flex: 1;
+  font-family:"Inter", sans-serif;
+  font-size:15px;
+}
+
+.player-details h2 {
+  margin-top: 0;
+  color:white;
+}
+
+.player-details p {
+  margin: 8px 0;
+  color:white;
+}
+p strong{
+    color:yellow;
+    font-size:16px;
+}
